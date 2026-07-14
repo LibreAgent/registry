@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "youtube",
+  "name": "YouTube",
+  "version": "1.0.0",
+  "description": "Video search and transcript extraction — great for research and repurposing content. Transcript availability depends on the video having captions.",
+  "author": {
+    "name": "anaisbetts",
+    "url": "https://github.com/anaisbetts/mcp-youtube"
+  },
+  "license": "MIT",
+  "source": "https://github.com/anaisbetts/mcp-youtube",
+  "tags": [
+    "creator",
+    "youtube",
+    "video",
+    "research"
+  ],
+  "icon": "icon.svg",
+  "compatibility": {
+    "libreagents": "*",
+    "client": "*"
+  },
+  "permissions": [
+    "network"
+  ],
+  "transport": "stdio",
+  "command": "npx",
+  "args": [
+    "-y",
+    "@anaisbetts/mcp-youtube"
+  ],
+  "runtimeMode": "dual"
+}

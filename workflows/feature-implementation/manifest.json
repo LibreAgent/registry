@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1",
+  "type": "workflow",
+  "id": "feature-implementation",
+  "name": "Feature Implementation",
+  "version": "1.0.0",
+  "description": "Plan, implement, and test a new feature end to end.",
+  "author": {
+    "name": "LibreAgents Registry",
+    "url": "https://github.com/"
+  },
+  "license": "MIT",
+  "tags": [
+    "development",
+    "feature"
+  ],
+  "compatibility": {
+    "libreagents": "*",
+    "client": "*"
+  },
+  "entry": "workflow.json",
+  "requires": [
+    "agent/architect",
+    "agent/test-writer",
+    "agent/code-reviewer"
+  ],
+  "runtimeMode": "dual"
+}

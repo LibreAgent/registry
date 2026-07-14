@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1",
+  "type": "workflow",
+  "id": "security-audit",
+  "name": "Security Audit",
+  "version": "1.0.0",
+  "description": "Audit a codebase or diff for vulnerabilities and report findings.",
+  "author": {
+    "name": "LibreAgents Registry",
+    "url": "https://github.com/"
+  },
+  "license": "MIT",
+  "tags": [
+    "security",
+    "audit"
+  ],
+  "compatibility": {
+    "libreagents": "*",
+    "client": "*"
+  },
+  "entry": "workflow.json",
+  "requires": [
+    "agent/security-auditor"
+  ],
+  "runtimeMode": "dual"
+}

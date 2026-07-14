@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "playwright",
+  "name": "Playwright",
+  "version": "1.0.0",
+  "description": "Drive a real browser — navigate, click, fill forms, screenshot, and run plain-English smoke tests.",
+  "author": {
+    "name": "Microsoft",
+    "url": "https://github.com/microsoft/playwright-mcp"
+  },
+  "license": "Apache-2.0",
+  "source": "https://github.com/microsoft/playwright-mcp",
+  "tags": [
+    "browser",
+    "testing",
+    "automation",
+    "web"
+  ],
+  "icon": "icon.svg",
+  "compatibility": {
+    "libreagents": "*",
+    "client": "*"
+  },
+  "permissions": [
+    "network"
+  ],
+  "transport": "stdio",
+  "command": "npx",
+  "args": [
+    "-y",
+    "@playwright/mcp@latest"
+  ],
+  "runtimeMode": "dual"
+}

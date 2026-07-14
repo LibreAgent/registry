@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1",
+  "type": "agent",
+  "id": "api-designer",
+  "name": "API Designer",
+  "version": "1.1.0",
+  "description": "Designs clean, consistent, well-documented HTTP/RPC APIs.",
+  "author": {
+    "name": "LibreAgents Registry",
+    "url": "https://github.com/"
+  },
+  "license": "MIT",
+  "tags": [
+    "api",
+    "design"
+  ],
+  "compatibility": {
+    "libreagents": "*",
+    "client": "*"
+  },
+  "entry": "AGENT.md",
+  "model": "claude-sonnet-4-6",
+  "tools": [
+    "Read",
+    "Grep",
+    "Write",
+    "Edit"
+  ],
+  "runtimeMode": "dual"
+}

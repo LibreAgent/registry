@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1",
+  "type": "agent",
+  "id": "debugger",
+  "name": "Debugger",
+  "version": "1.1.0",
+  "description": "Root-causes a failing test or bug and proposes a minimal fix.",
+  "author": {
+    "name": "LibreAgents Registry",
+    "url": "https://github.com/"
+  },
+  "license": "MIT",
+  "tags": [
+    "debugging",
+    "diagnosis"
+  ],
+  "compatibility": {
+    "libreagents": "*",
+    "client": "*"
+  },
+  "entry": "AGENT.md",
+  "model": "claude-opus-4-8",
+  "tools": [
+    "Read",
+    "Grep",
+    "Bash",
+    "Edit"
+  ],
+  "runtimeMode": "dual"
+}

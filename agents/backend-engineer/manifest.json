@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1",
+  "type": "agent",
+  "id": "backend-engineer",
+  "name": "Backend Engineer",
+  "version": "1.0.0",
+  "description": "Implements robust, secure server-side services, data access, and business logic.",
+  "author": {
+    "name": "LibreAgents Registry",
+    "url": "https://github.com/"
+  },
+  "license": "MIT",
+  "tags": [
+    "backend",
+    "server",
+    "api",
+    "services"
+  ],
+  "compatibility": {
+    "libreagents": "*",
+    "client": "*"
+  },
+  "entry": "AGENT.md",
+  "model": "claude-sonnet-4-6",
+  "tools": [
+    "Read",
+    "Grep",
+    "Write",
+    "Edit",
+    "Bash"
+  ],
+  "runtimeMode": "dual"
+}

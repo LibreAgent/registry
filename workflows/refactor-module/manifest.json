@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1",
+  "type": "workflow",
+  "id": "refactor-module",
+  "name": "Refactor Module",
+  "version": "1.0.0",
+  "description": "Safely refactor a module behind its existing tests.",
+  "author": {
+    "name": "LibreAgents Registry",
+    "url": "https://github.com/"
+  },
+  "license": "MIT",
+  "tags": [
+    "refactoring",
+    "quality"
+  ],
+  "compatibility": {
+    "libreagents": "*",
+    "client": "*"
+  },
+  "entry": "workflow.json",
+  "requires": [
+    "agent/refactorer",
+    "agent/code-reviewer"
+  ],
+  "runtimeMode": "dual"
+}

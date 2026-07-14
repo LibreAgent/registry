@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "1",
+  "generated": "2026-07-14T00:56:35Z",
+  "types": [
+    {
+      "type": "agent",
+      "count": 17,
+      "categories": []
+    },
+    {
+      "type": "mcp",
+      "count": 34,
+      "categories": []
+    },
+    {
+      "type": "skill",
+      "count": 286,
+      "categories": [
+        {
+          "name": "apple",
+          "count": 4
+        },
+        {
+          "name": "autonomous-ai-agents",
+          "count": 4
+        },
+        {
+          "name": "blockchain",
+          "count": 1
+        },
+        {
+          "name": "creative",
+          "count": 16
+        },
+        {
+          "name": "data-science",
+          "count": 9
+        },
+        {
+          "name": "design",
+          "count": 2
+        },
+        {
+          "name": "devops",
+          "count": 32
+        },
+        {
+          "name": "diagramming",
+          "count": 1
+        },
+        {
+          "name": "domain",
+          "count": 10
+        },
+        {
+          "name": "email",
+          "count": 1
+        },
+        {
+          "name": "gaming",
+          "count": 1
+        },
+        {
+          "name": "github",
+          "count": 8
+        },
+        {
+          "name": "mcp",
+          "count": 1
+        },
+        {
+          "name": "media",
+          "count": 6
+        },
+        {
+          "name": "mlops",
+          "count": 27
+        },
+        {
+          "name": "note-taking",
+          "count": 1
+        },
+        {
+          "name": "productivity",
+          "count": 24
+        },
+        {
+          "name": "red-teaming",
+          "count": 13
+        },
+        {
+          "name": "research",
+          "count": 4
+        },
+        {
+          "name": "smart-home",
+          "count": 1
+        },
+        {
+          "name": "social-media",
+          "count": 1
+        },
+        {
+          "name": "software-development",
+          "count": 63
+        },
+        {
+          "name": "trading",
+          "count": 56
+        }
+      ]
+    },
+    {
+      "type": "workflow",
+      "count": 11,
+      "categories": []
+    }
+  ]
+}

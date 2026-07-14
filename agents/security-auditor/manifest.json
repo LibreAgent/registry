@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1",
+  "type": "agent",
+  "id": "security-auditor",
+  "name": "Security Auditor",
+  "version": "1.1.0",
+  "description": "Audits code changes for security vulnerabilities and unsafe patterns.",
+  "author": {
+    "name": "LibreAgents Registry",
+    "url": "https://github.com/"
+  },
+  "license": "MIT",
+  "tags": [
+    "security",
+    "audit",
+    "review"
+  ],
+  "compatibility": {
+    "libreagents": "*",
+    "client": "*"
+  },
+  "entry": "AGENT.md",
+  "model": "claude-opus-4-8",
+  "tools": [
+    "Read",
+    "Grep",
+    "Bash"
+  ],
+  "runtimeMode": "dual"
+}

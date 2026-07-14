@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1",
+  "type": "workflow",
+  "id": "dependency-upgrade",
+  "name": "Dependency Upgrade",
+  "version": "1.0.0",
+  "description": "Bump dependencies, run the test suite, and open a PR if green.",
+  "author": {
+    "name": "LibreAgents Registry",
+    "url": "https://github.com/"
+  },
+  "license": "MIT",
+  "tags": [
+    "maintenance",
+    "dependencies"
+  ],
+  "compatibility": {
+    "libreagents": "*",
+    "client": "*"
+  },
+  "entry": "workflow.json",
+  "requires": [
+    "agent/test-writer",
+    "mcp/github"
+  ],
+  "runtimeMode": "dual"
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1",
+  "type": "agent",
+  "id": "incident-responder",
+  "name": "Incident Responder",
+  "version": "1.0.0",
+  "description": "Triages production incidents, restores service, and runs blameless postmortems.",
+  "author": {
+    "name": "LibreAgents Registry",
+    "url": "https://github.com/"
+  },
+  "license": "MIT",
+  "tags": [
+    "incident",
+    "sre",
+    "oncall",
+    "reliability"
+  ],
+  "compatibility": {
+    "libreagents": "*",
+    "client": "*"
+  },
+  "entry": "AGENT.md",
+  "model": "claude-opus-4-8",
+  "tools": [
+    "Read",
+    "Grep",
+    "Bash"
+  ],
+  "runtimeMode": "dual"
+}

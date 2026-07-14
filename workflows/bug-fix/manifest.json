@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1",
+  "type": "workflow",
+  "id": "bug-fix",
+  "name": "Bug Fix",
+  "version": "1.0.0",
+  "description": "Reproduce a reported bug, fix it, and add a regression test.",
+  "author": {
+    "name": "LibreAgents Registry",
+    "url": "https://github.com/"
+  },
+  "license": "MIT",
+  "tags": [
+    "debugging",
+    "testing"
+  ],
+  "compatibility": {
+    "libreagents": "*",
+    "client": "*"
+  },
+  "entry": "workflow.json",
+  "requires": [
+    "agent/debugger",
+    "agent/test-writer"
+  ],
+  "runtimeMode": "dual"
+}
