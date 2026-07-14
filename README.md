@@ -18,7 +18,7 @@ Published source entries are limited to the approved MIT and Apache-2.0 set. For
 
 ## Registry website and edge API
 
-The public website is a dependency-free static Agent Hub under [`site/`](site/).
+The public website is a dependency-free static Agent Hub under [`public/`](public/).
 It uses the AirVeo Blue Glass design tokens and reads the same generated
 `index.json` used by clients. Search, type filters, paging, license metadata,
 runtime modes, and source links are rendered in the browser without a separate

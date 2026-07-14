@@ -5,9 +5,9 @@ const API_FILES = {
 };
 
 const SITE_FILES = {
-  "/": ["site/index.html", "text/html; charset=utf-8"],
-  "/styles.css": ["site/styles.css", "text/css; charset=utf-8"],
-  "/app.js": ["site/app.js", "text/javascript; charset=utf-8"],
+  "/": ["public/index.html", "text/html; charset=utf-8"],
+  "/styles.css": ["public/styles.css", "text/css; charset=utf-8"],
+  "/app.js": ["public/app.js", "text/javascript; charset=utf-8"],
   "/favicon.svg": ["web/public/images/icon.svg", "image/svg+xml"],
 };
 
