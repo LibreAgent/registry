@@ -9,6 +9,7 @@ const SITE_FILES = {
   "/styles.css": ["public/styles.css", "text/css; charset=utf-8"],
   "/app.js": ["public/app.js", "text/javascript; charset=utf-8"],
   "/favicon.svg": ["web/public/images/icon.svg", "image/svg+xml"],
+  "/favicon.ico": ["web/public/images/icon.svg", "image/svg+xml"],
 };
 
 const SOURCE_ROOT = "https://raw.githubusercontent.com/LibreAgent/registry/main/";
