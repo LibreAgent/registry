@@ -9,11 +9,25 @@ LibreAgents is an independent platform with its own schemas, compatibility contr
 ## Registry endpoints
 
 - Repository: <https://github.com/LibreAgent/registry>
-- Catalog website: <https://www.libreagents.com/registry> (planned)
-- Machine-readable catalog: <https://registry.libreagents.com/v1/appcards/index.json> (planned)
+- Catalog website: <https://registry.libreagents.com/>
+- Product website: <https://www.libreagents.com/registry>
+- Machine-readable catalog: <https://registry.libreagents.com/v1/appcards/index.json>
 - Raw bootstrap catalog: <https://raw.githubusercontent.com/LibreAgent/registry/main/index.json>
 
 Published source entries are limited to the approved MIT and Apache-2.0 set. Former-runtime-specific entries, entries without a declared license, and the unlicensed model-provider catalog are omitted. Required source attribution is consolidated in [THIRD_PARTY_LICENSE_NOTICES.md](THIRD_PARTY_LICENSE_NOTICES.md), with item-level license and notice files preserved beside their entries.
+
+## Registry website and edge API
+
+The public website is a dependency-free static Agent Hub under [`site/`](site/).
+It uses the AirVeo Blue Glass design tokens and reads the same generated
+`index.json` used by clients. Search, type filters, paging, license metadata,
+runtime modes, and source links are rendered in the browser without a separate
+application server.
+
+[`worker/worker.js`](worker/worker.js) is the Cloudflare Worker source for
+`registry.libreagents.com`. It serves the static website, health route, and
+machine-readable catalog from this repository with restricted paths, explicit
+content types, CORS, caching, and browser security headers.
 
 ## AppCards
 

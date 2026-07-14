@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Discover portable agents, AppCards, skills, and workflows tested for the LibreAgents runtime."
+    />
+    <meta name="theme-color" content="#dfeefc" />
+    <meta property="og:title" content="LibreAgents Public Agent Registry" />
+    <meta
+      property="og:description"
+      content="Portable agents, AppCards, skills, and workflows tested for the LibreAgents runtime."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://registry.libreagents.com/" />
+    <title>LibreAgents Public Agent Registry</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#catalog">Skip to registry catalog</a>
+
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="LibreAgents Registry home">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span>
+          <strong>LibreAgents</strong>
+          <small>Public Agent Registry</small>
+        </span>
+      </a>
+      <nav aria-label="Registry links">
+        <a href="https://github.com/LibreAgent/registry">GitHub</a>
+        <a href="https://www.libreagents.com/registry">Documentation</a>
+        <a class="header-status" href="/health">
+          <span aria-hidden="true"></span> Registry online
+        </a>
+      </nav>
+    </header>
+
+    <main class="hub-shell">
+      <section class="hub-intro" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">LibreAgents public registry</p>
+          <h1 id="page-title">Discover Agent Hub</h1>
+          <p class="hub-description">
+            Browse portable agents, AppCards, skills, workflows, and MCP integrations
+            tested for the LibreAgents runtime.
+          </p>
+        </div>
+        <div class="hero-actions">
+          <a class="button button-secondary" href="https://github.com/LibreAgent/registry">View repository</a>
+          <a class="button button-primary" href="/v1/appcards/index.json">Open JSON catalog</a>
+        </div>
+      </section>
+
+      <dl class="hub-stats" aria-label="Registry summary">
+        <div><dt id="total-count">—</dt><dd>Verified entries</dd></div>
+        <div><dt id="agent-count">—</dt><dd>Portable agents</dd></div>
+        <div><dt id="skill-count">—</dt><dd>Reusable skills</dd></div>
+        <div><dt>2</dt><dd>Approved licenses</dd></div>
+      </dl>
+
+      <section class="catalog-section" id="catalog" aria-labelledby="catalog-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Public catalog</p>
+            <h2 id="catalog-title">Public catalog</h2>
+          </div>
+          <p id="catalog-meta" role="status" aria-live="polite">Loading registry…</p>
+        </div>
+
+        <div class="catalog-toolbar">
+          <label class="search-field">
+            <span class="search-icon" aria-hidden="true"></span>
+            <span class="sr-only">Search registry</span>
+            <input id="search" type="search" placeholder="Search agents, skills, tags, or publishers" autocomplete="off" />
+          </label>
+          <div class="filter-tabs" id="filters" aria-label="Filter registry by type"></div>
+        </div>
+
+        <div class="catalog-grid" id="catalog-grid" aria-busy="true">
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+        </div>
+
+        <div class="empty-state" id="empty-state" hidden>
+          <div class="empty-icon" aria-hidden="true">⌕</div>
+          <h3>No entries found</h3>
+          <p>Try a different search term or catalog type.</p>
+        </div>
+
+        <div class="load-more-wrap">
+          <button class="button button-secondary" id="load-more" type="button" hidden>Load more</button>
+        </div>
+      </section>
+
+      <section class="endpoint-strip" aria-label="Machine-readable catalog endpoint">
+        <div>
+          <span class="endpoint-label">Machine-readable catalog</span>
+          <code>GET https://registry.libreagents.com/v1/appcards/index.json</code>
+        </div>
+        <button class="button button-secondary" id="copy-endpoint" type="button">Copy endpoint</button>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <strong>LibreAgents™</strong>
+        <p>Portable agent infrastructure for independent and collaborative work.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/LibreAgent/registry/blob/main/LICENSE">MIT License</a>
+        <a href="https://github.com/LibreAgent/registry/blob/main/THIRD_PARTY_LICENSE_NOTICES.md">Third-party notices</a>
+        <a href="https://github.com/LibreAgent/registry/blob/main/TRADEMARKS.md">Trademarks</a>
+      </div>
+    </footer>
+  </body>
+</html>
